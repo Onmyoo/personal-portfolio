@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #27548A;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #27548A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.home {
+    height: 100vh;
+    background: url('Home 2.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.home-content h1 {
+    color: #DDA853;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h2 {
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.2    ;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #DDA853;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #DDA853;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #DDA853;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #F5EEDC;
+
+}
+
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #DDA853;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.home-sci a:hover:before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 700px;
+    height: 100%;
+    background: transparent;
+    transition: 2s;
+}
+
+.home-imgHover:hover {
+    background: #F5EEDC;
+    opacity: .8;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2 rem;
+    background: #F5EEDC;
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+span {
+    color: #DDA853;
+}
+
+.about-img {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #DDA853;
+
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 2rem 0 3rem;
+    max-width: 50rem;
+}
+
+.btn-box.btns a::before {
+    background: #F5EEDC;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+    background: #F5EEDC;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.portfolio .tab-list {
+    margin: 5rem;
+    background: #F5EEDC;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: #DDA853;
+}
+
+.footer-text p {
+    font-size: 1rem;
+    color: #F5EEDC;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #DDA853;
+    color: #F5EEDC;
+    border: .2rem solid #F5EEDC;
+    border-radius: .6rem;
+}
+
+.footer-iconTop a i {
+    font-size: 1.5rem;
+    color: #F5EEDC;
+}
